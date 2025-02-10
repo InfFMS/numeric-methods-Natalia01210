@@ -18,12 +18,12 @@ while(r - l >= 0.0001):
     else:
         l = l + (r-l)/2
 print(round(l, 2))
-x = np.linspace(-3, 3, 100)
+x = np.linspace(-2, 2, 100)
 y = x ** 3 - x + 1
 fig = plt.figure(figsize=(14, 6))
 ax = plt.subplot(2, 3, 1)
 plt.plot(x, y)
-ax.plot([-3, 3],[0, 0])
+ax.plot([-2, 2],[0, 0])
 plt.title("y = x³ - x + 1")
 plt.grid()
 
